@@ -1,5 +1,6 @@
 # Ignore Vim swap files
 *.swp
+.idea
 
 # Other common ignores
 *.log
