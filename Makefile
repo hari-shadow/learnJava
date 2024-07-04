@@ -7,5 +7,6 @@ run :
 	@java -cp basics ConditionalsAndLoops
 clean :
 	@rm basics/*.class
-
+move :
+	@mv basics/*.java basics/archive/
 
