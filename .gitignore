@@ -1,0 +1,9 @@
+# Ignore Vim swap files
+*.swp
+
+# Other common ignores
+*.log
+*.tmp
+*.class
+*.jar
+
