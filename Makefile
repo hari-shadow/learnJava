@@ -1,12 +1,12 @@
 all : compile run 
 
 compile :
-	@javac basics/ConditionalsAndLoops.java
+	@javac basics/*.java
 
-run :
-	@java -cp basics ConditionalsAndLoops
+#run :
+#	@java -cp basics * 
 clean :
 	@rm basics/*.class
-move :
+#move :
 	@mv basics/*.java basics/archive/
 
