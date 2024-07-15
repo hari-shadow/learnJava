@@ -2,7 +2,7 @@ package BinarySearchProblems;
 
 public class CeilNumberInBinarySearch {
     public static void main(String[] args) {
-        int[] arr = new int[]{1, 3, 4, 8, 9, 10, 12, 17, 23};
+        int[] arr = new int[]{1, 3, 4, 8, 9, 9, 9, 9, 10, 12, 17, 23};
         int target = 40;
         System.out.println(ceilNum(arr, target));
 
@@ -11,6 +11,9 @@ public class CeilNumberInBinarySearch {
     static int ceilNum(int[] arr, int target) {
         int start = 0;
         int end = arr.length - 1;
+        if (arr[end] < target) {
+            return -1;
+        }
         while (start <= end) {
             int mid = start + (end - start) / 2;
             if (arr[mid] == target) {
