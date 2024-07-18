@@ -2,7 +2,8 @@ package BinarySearchProblems;
 
 public class MaximumInRotatedArray {
     public static void main(String[] args) {
-        int[] arr = {15, 18, 19, 30, 56, 2, 3, 6, 12};
+//        int[] arr = {15, 18, 19, 30, 56, 2, 3, 6, 12};
+        int[] arr = new int[]{6, 7, 8, 1, 2, 3, 4};
         System.out.println(pivot(arr));
     }
 
