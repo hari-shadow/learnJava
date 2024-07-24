@@ -11,16 +11,17 @@ public class CyclicSort {
     static void cyclic(int[] arr ){
         int i = 0;
         while ( i < arr.length){
-            if (arr[i] == i +1){
-                i++;
+            int correctIndexOfElement = arr[i] -1;
+            if (arr[i] != arr[correctIndexOfElement]){
+                swap(arr,correctIndexOfElement, i);
             }else{
-                swap(arr,arr[i], i);
+                i++;
             }
         }
     }
     static void swap(int[] arr,int t1, int t2){
-        int temp = arr[t1-1];
-        arr[t1 -1] = arr[t2];
+        int temp = arr[t1];
+        arr[t1 ] = arr[t2];
         arr[t2] = temp;
     }
 }
