@@ -16,7 +16,8 @@ public class ArraylistsLearn {
         arrayList.add(535);
 
         System.out.println(arrayList);
-
+        int[] arr = new int[arrayList.size()];
+        System.out.println(arr.toString());
         input.close();
     }
 }
